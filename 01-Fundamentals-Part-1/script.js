@@ -102,3 +102,43 @@ console.log(a, b);
 
 const averageAge = (myAge + ageAdrew) / 2;
 console.log(averageAge);
+
+// String literals
+const myName = "Phuong";
+const myBirthYear = 1995;
+const myJob = "Developer";
+const currentYear = 2019;
+
+const myIntro = "I'm " + myName + ", a " + (currentYear - myBirthYear) + " years old " + myJob + "!";
+console.log(myIntro);
+
+const newInto = `I'm ${myName}, a ${currentYear - myBirthYear} years old ${myJob}`;
+console.log(myIntro);
+
+console.log(`Just a regular string!`);
+console.log("String with \n\
+mutiple \n\
+line");
+console.log(`String with
+multiple
+line`);
+
+// Taking decision: if-else statements
+const ageSarah = 15;
+const isOldEnough = ageSarah >= 18;
+
+if (isOldEnough) {
+    console.log('Sarah can start driving license 🚗 ');
+} else {
+    const yearLeft = 18 - ageSarah;
+    console.log(`Sarah is too young. Wait another ${yearLeft} years 👦`);
+}
+
+const birthyear = 1991;
+let century;
+if (birthyear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
