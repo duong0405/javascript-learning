@@ -217,3 +217,50 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } else {
     console.log('Someone else should drive');
 }
+
+// switch statement
+const day = 'friday';
+switch (day) {  
+    case 'monday':      // day === 'monday'
+        console.log('Go to shool');
+        break;
+    case 'tuesday':
+        console.log('Learn JavaScript');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Learn html/css');
+        break;
+    case 'friday':
+        console.log('Learn database');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend!');
+        break;
+    default:
+        console.log('Not a valid day');
+        break;
+}
+
+if (day === 'monday') {
+    console.log('Go to school');
+} else if (day === 'tuesday') {
+    console.log('Learn JavaScript');
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log("Learn html/css");
+} else if (day === 'friday') {
+    console.log('Learn database');
+} else if (day === 'saturday' || day === 'sunday') {
+    console.log('Enjoy the weekend')
+} else {
+    console.log('Not a valid day')
+}
+
+age = 20;
+age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
+
+const drink = age >= 18 ? 'wine 🍷' : 'water 💧';
+console.log(drink);
+
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`);
