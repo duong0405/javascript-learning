@@ -142,3 +142,78 @@ if (birthyear <= 2000) {
     century = 21;
 }
 console.log(century);
+
+// Type Conversion and Coercion
+const inputYear = '1995';
+console.log(inputYear + 10);
+console.log(Number(inputYear) + 10);
+
+console.log(Number('andrew'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// type coercion
+console.log("I'm " + 23 + " years old") // auto convert number to string
+console.log('23' - '10' - '3');
+console.log('23' * '2');
+
+// 5 falsy values: 0, '', undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(''));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+console.log(Boolean({}));
+
+const money = 0;
+if (money) {
+    console.log("Don't spend it all!");
+} else {
+    console.log("You should get a job!");
+}
+ let score;
+ if (score) {
+    console.log("Score is define");
+ } else {
+    console.log("Score is undefined");
+ }
+
+ // Equality operator
+const num = '18';
+if (num === 18)
+    console.log('Strict equality');
+
+if (num == 18)
+    console.log('Loose equality');
+
+const favourite = prompt("What's favourite number?");
+console.log(favourite);
+console.log(typeof favourite);
+if (favourite === 10) {  //'10' == 10
+    console.log('Cool! That is an amazing number');
+}
+
+// Boolean logic
+// 1. AND operator: true when all are true
+// 2. OR operator: true when one is true
+// 3. NOT operator: Inverts true/false value
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+// if (shouldDrive) {
+//     console.log('Sarah is able to drive!')
+// } else {
+//     console.log('Someone else should drive.')
+// }
+const isTired  = false;
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive!');
+} else {
+    console.log('Someone else should drive');
+}
